@@ -119,6 +119,14 @@ body {
     border: 1px solid rgba(239, 68, 68, .3);
     color: #fecaca;
     font-size: .8rem;
+    transition: .3s;
+}
+
+.role:hover {
+    transform: translateY(-3px);
+    border-color: rgba(239,68,68,.35);
+    box-shadow:
+        0 8px 18px rgba(239,68,68,.25);
 }
 
 .status {
@@ -132,6 +140,14 @@ body {
     border: 1px solid rgba(239, 68, 68, .25);
     color: #fecaca;
     font-size: .8rem;
+    transition: .3s;
+}
+
+.status:hover {
+    transform: translateY(-3px);
+    border-color: rgba(239,68,68,.35);
+    box-shadow:
+        0 8px 18px rgba(239,68,68,.25);
 }
 
 .status span {
@@ -207,7 +223,9 @@ body {
     gap: .75rem;
 }
 
-.skills span {
+.skills a {
+    text-decoration: none;
+    color: inherit;
     padding: .5rem;
     border-radius: 999px;
     font-size: .72rem;
@@ -217,12 +235,14 @@ body {
     cursor: default;
 }
 
-.skills span:hover {
+.skills a:hover {
     transform: translateY(-3px);
     border-color: rgba(239,68,68,.35);
     box-shadow:
         0 8px 18px rgba(239,68,68,.25);
+    cursor: pointer;
 }
+
 
 .divider {
     height: 1px;
