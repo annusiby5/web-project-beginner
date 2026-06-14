@@ -7,7 +7,8 @@
 body {
     font-family: "Inter", sans-serif;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,6 +292,15 @@ body {
 
 @media (max-width: 480px) {
 
+    body {
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
     .card {
         padding: 1.4rem;
     }
@@ -301,16 +311,5 @@ body {
 
     .socials {
         flex-direction: column;
-    }
-}
-
-@media (max-height: 700px) {
-
-    body {
-        overflow-y: auto;
-    }
-
-    .card {
-        margin: 1rem 0;
     }
 }
